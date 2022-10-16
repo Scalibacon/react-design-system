@@ -14,8 +14,12 @@ module.exports = {
     "builder": "@storybook/builder-vite"
   },
   "features": {
-    "storyStoreV7": true
+    "storyStoreV7": true,
+    "interactionsDebugger": true,
   },
+  "staticDirs": [
+    "../public"
+  ],
   // caso tenha "/" no nome do usuário/repositório
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION'){
